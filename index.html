@@ -8,53 +8,50 @@
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --bg:#f8f9fa;
-  --bg2:#edf1f5;
+  --bg:#f5f3ef;
+  --bg2:#ede9e2;
   --white:#ffffff;
-  /* Official NSU Logo Colors */
-  --navy:#002147;      /* NSU Dark Regal Blue */
-  --navy2:#003366;     /* Secondary Deep Blue */
-  --gold:#d4af37;      /* NSU Elegant Gold */
-  --gold-l:#fff9e6;    /* Light Gold Accent tint */
-  /* Functional Colors adjusted to match the theme */
-  --green:#1b4d3e;     /* Deep forest green */
-  --green2:#23614e;
-  --green-l:#eef7f4;
-  --red:#a62b2b;       /* Crimson accent */
-  --red-l:#fdf1f1;
-  --blue:#0056b3;
-  --blue-l:#f0f6ff;
-  --text:#001530;
-  --text2:#405065;
-  --text3:#8898a8;
-  --border:rgba(0,33,71,0.1);
-  --shadow:0 4px 20px rgba(0,33,71,0.06);
+  --navy:#0a1628;
+  --navy2:#162340;
+  --green:#0b6e4f;
+  --green2:#0d8a62;
+  --green-l:#d6f5ea;
+  --gold:#c8860a;
+  --gold-l:#fef3dc;
+  --red:#b83232;
+  --red-l:#fde8e8;
+  --blue:#1a56a8;
+  --blue-l:#ddeeff;
+  --text:#0a1628;
+  --text2:#4a5566;
+  --text3:#8a95a5;
+  --border:rgba(10,22,40,0.1);
+  --shadow:0 2px 16px rgba(10,22,40,0.08);
 }
 html{scroll-behavior:smooth}
 body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.6;min-height:100vh}
 
 /* NAVBAR */
-.navbar{position:sticky;top:0;z-index:100;background:var(--navy);display:flex;align-items:center;justify-content:space-between;padding:0 2rem;height:58px;box-shadow:0 2px 20px rgba(0,0,0,0.3);border-bottom:3px solid var(--gold)}
+.navbar{position:sticky;top:0;z-index:100;background:var(--navy);display:flex;align-items:center;justify-content:space-between;padding:0 2rem;height:58px;box-shadow:0 2px 20px rgba(0,0,0,0.3)}
 .nav-brand{display:flex;align-items:center;gap:10px}
 .nav-crest{width:34px;height:34px;background:var(--gold);border-radius:6px;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:12px;color:var(--navy);font-weight:700;letter-spacing:-0.5px}
 .nav-title{color:#fff;font-size:14px;font-weight:500;letter-spacing:0.3px}
-.nav-title span{color:var(--gold)}
+.nav-title span{color:#f5c842}
 .nav-right{display:flex;align-items:center;gap:8px}
 .nav-btn{background:none;border:1px solid rgba(255,255,255,0.15);color:rgba(255,255,255,0.7);padding:6px 14px;border-radius:6px;font-family:'Outfit',sans-serif;font-size:12px;font-weight:500;cursor:pointer;transition:all 0.15s}
 .nav-btn:hover{background:rgba(255,255,255,0.1);color:#fff}
-.nav-btn.active{background:rgba(212,175,55,0.2);border-color:rgba(212,175,55,0.4);color:var(--gold)}
 
 /* HERO */
-.hero{background:var(--navy);padding:4rem 2rem 3rem;text-align:center;position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 100%, rgba(212,175,55,0.08) 0%,transparent 70%)}
-.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(212,175,55,0.15);color:var(--gold);border:1px solid rgba(212,175,55,0.3);font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:5px 14px;border-radius:20px;margin-bottom:1.2rem;position:relative}
+.hero{background:var(--navy2);padding:4rem 2rem 3rem;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 100%, rgba(11,110,79,0.12) 0%,transparent 70%)}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(200,134,10,0.15);color:#f5c842;border:1px solid rgba(200,134,10,0.3);font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:5px 14px;border-radius:20px;margin-bottom:1.2rem;position:relative}
 .hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.5rem);color:#fff;line-height:1.15;margin-bottom:0.8rem;position:relative}
-.hero h1 em{color:var(--gold);font-style:italic}
-.hero-sub{font-size:16px;color:rgba(255,255,255,0.65);max-width:480px;margin:0 auto 2rem;position:relative}
-.hero-cta{display:inline-flex;align-items:center;gap:8px;background:var(--gold);color:var(--navy);font-family:'Outfit',sans-serif;font-size:14px;font-weight:600;padding:12px 26px;border-radius:8px;border:none;cursor:pointer;transition:all 0.2s;box-shadow:0 4px 18px rgba(212,175,55,0.25);position:relative}
-.hero-cta:hover{background:#ebd06a;transform:translateY(-2px)}
+.hero h1 em{color:#f5c842;font-style:italic}
+.hero-sub{font-size:16px;color:rgba(255,255,255,0.55);max-width:480px;margin:0 auto 2rem;position:relative}
+.hero-cta{display:inline-flex;align-items:center;gap:8px;background:var(--green);color:#fff;font-family:'Outfit',sans-serif;font-size:14px;font-weight:600;padding:12px 26px;border-radius:8px;border:none;cursor:pointer;transition:all 0.2s;box-shadow:0 4px 18px rgba(11,110,79,0.35);position:relative}
+.hero-cta:hover{background:var(--green2);transform:translateY(-2px)}
 .hero-stats{display:flex;justify-content:center;gap:3rem;margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.07);position:relative;flex-wrap:wrap;gap:2rem}
-.hstat-val{font-family:'Playfair Display',serif;font-size:1.9rem;color:var(--gold)}
+.hstat-val{font-family:'Playfair Display',serif;font-size:1.9rem;color:#f5c842}
 .hstat-label{font-size:11px;color:rgba(255,255,255,0.4);letter-spacing:0.5px;margin-top:2px}
 
 /* MAIN */
@@ -64,10 +61,10 @@ body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--text);font
 .tabs{display:flex;gap:6px;margin-bottom:1.5rem;background:var(--white);padding:5px;border-radius:12px;border:1px solid var(--border);box-shadow:var(--shadow);flex-wrap:wrap}
 .tab{flex:1;min-width:120px;display:flex;align-items:center;justify-content:center;gap:7px;padding:9px 14px;border-radius:8px;border:none;cursor:pointer;font-family:'Outfit',sans-serif;font-size:13px;font-weight:500;color:var(--text2);background:transparent;transition:all 0.18s}
 .tab:hover{background:var(--bg2);color:var(--text)}
-.tab.active{background:var(--navy);color:#fff;box-shadow:0 2px 10px rgba(0,33,71,0.2)}
-.tab[data-t="cgpa"].active{background:var(--navy)}
+.tab.active{background:var(--navy);color:#fff;box-shadow:0 2px 10px rgba(10,22,40,0.2)}
+.tab[data-t="cgpa"].active{background:var(--green)}
 .tab[data-t="semester"].active{background:var(--blue)}
-.tab[data-t="courses"].active{background:var(--gold);color:var(--navy)}
+.tab[data-t="courses"].active{background:var(--gold)}
 .tab[data-t="analytics"].active{background:var(--red)}
 .tab-icon{font-size:15px}
 
@@ -92,19 +89,19 @@ body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--text);font
 .form-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-bottom:10px}
 .fg{display:flex;flex-direction:column;gap:4px}
 .fg label{font-size:11px;font-weight:600;letter-spacing:0.5px;text-transform:uppercase;color:var(--text2)}
-.fg input,.fg select{padding:8px 11px;border:1px solid var(--border);border-radius:7px;font-family:'Outfit',sans-serif;font-size:13px;color:var(--text);background:var(--bg);outline:none;transition:border-color 0.15s;-webkit-appearance:none}
-.fg input:focus,.fg select:focus{border-color:var(--navy);background:#fff}
-.btn-add{display:inline-flex;align-items:center;gap:7px;padding:9px 20px;border-radius:7px;border:none;font-family:'Outfit',sans-serif;font-size:13px;font-weight:600;cursor:pointer;transition:all 0.15s;color:#fff;background:var(--navy)}
-.btn-add:hover{filter:brightness(1.2);transform:translateY(-1px)}
-.btn-danger{background:none;border:1px solid rgba(166,43,43,0.25);color:var(--red);font-size:11px;padding:4px 10px;border-radius:5px;cursor:pointer;font-family:'Outfit',sans-serif;font-weight:500;transition:all 0.15s}
+.fg input,.fg select{padding:8px 11px;border:1px solid var(--border);border-radius:7px;font-family:'Outfit',sans-serif;font-size:13px;color:var(--text);background:var(--bg);outline:none;transition:border-color 0.15s}
+.fg input:focus,.fg select:focus{border-color:var(--green);background:#fff}
+.btn-add{display:inline-flex;align-items:center;gap:7px;padding:9px 20px;border-radius:7px;border:none;font-family:'Outfit',sans-serif;font-size:13px;font-weight:600;cursor:pointer;transition:all 0.15s;color:#fff;background:var(--green)}
+.btn-add:hover{filter:brightness(1.1);transform:translateY(-1px)}
+.btn-danger{background:none;border:1px solid rgba(184,50,50,0.25);color:var(--red);font-size:11px;padding:4px 10px;border-radius:5px;cursor:pointer;font-family:'Outfit',sans-serif;font-weight:500;transition:all 0.15s}
 .btn-danger:hover{background:var(--red-l)}
 
 /* TABLE */
 .table-wrap{overflow-x:auto;border-radius:12px;border:1px solid var(--border)}
 table{width:100%;border-collapse:collapse;font-size:13px}
 thead tr{background:var(--navy)}
-thead th{padding:10px 11px;text-align:left;font-size:10px;font-weight:600;letter-spacing:0.7px;text-transform:uppercase;color:rgba(255,255,255,0.8);white-space:nowrap}
-tbody tr{border-bottom:1px solid rgba(0,33,71,0.05);transition:background 0.1s}
+thead th{padding:10px 11px;text-align:left;font-size:10px;font-weight:600;letter-spacing:0.7px;text-transform:uppercase;color:rgba(255,255,255,0.7);white-space:nowrap}
+tbody tr{border-bottom:1px solid rgba(10,22,40,0.05);transition:background 0.1s}
 tbody tr:hover{background:var(--bg2)}
 tbody tr:last-child{border-bottom:none}
 tbody td{padding:9px 11px;color:var(--text);max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
@@ -114,14 +111,14 @@ tbody td{padding:9px 11px;color:var(--text);max-width:140px;overflow:hidden;text
 .grade-badge{display:inline-block;padding:2px 9px;border-radius:20px;font-size:11px;font-weight:600}
 
 /* CGPA VISUAL */
-.cgpa-display{background:var(--navy);border-radius:16px;padding:2rem;display:flex;align-items:center;justify-content:space-between;margin-bottom:1.2rem;flex-wrap:wrap;gap:1rem;box-shadow:0 8px 28px rgba(0,33,71,0.18);border-left:5px solid var(--gold)}
+.cgpa-display{background:var(--navy);border-radius:16px;padding:2rem;display:flex;align-items:center;justify-content:space-between;margin-bottom:1.2rem;flex-wrap:wrap;gap:1rem;box-shadow:0 8px 28px rgba(10,22,40,0.18)}
 .cgpa-main .label{font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:4px}
-.cgpa-number{font-family:'Playfair Display',serif;font-size:4.5rem;color:var(--gold);line-height:1}
-.cgpa-sub{font-size:12px;color:rgba(255,255,255,0.4);margin-top:4px}
+.cgpa-number{font-family:'Playfair Display',serif;font-size:4.5rem;color:#f5c842;line-height:1}
+.cgpa-sub{font-size:12px;color:rgba(255,255,255,0.35);margin-top:4px}
 .cgpa-right{display:flex;gap:1.5rem;flex-wrap:wrap}
-.cgpa-pill{background:rgba(212,175,55,0.12);border:1px solid rgba(212,175,55,0.25);border-radius:10px;padding:0.9rem 1.2rem;text-align:center}
+.cgpa-pill{background:rgba(245,200,66,0.12);border:1px solid rgba(245,200,66,0.25);border-radius:10px;padding:0.9rem 1.2rem;text-align:center}
 .cgpa-pill .p-label{font-size:10px;color:rgba(255,255,255,0.4);text-transform:uppercase;letter-spacing:1px;margin-bottom:3px}
-.cgpa-pill .p-val{font-family:'Playfair Display',serif;font-size:1.8rem;color:var(--gold)}
+.cgpa-pill .p-val{font-family:'Playfair Display',serif;font-size:1.8rem;color:#f5c842}
 
 /* PROGRESS BAR */
 .prog-wrap{margin-top:1.2rem}
@@ -147,7 +144,7 @@ tbody td{padding:9px 11px;color:var(--text);max-width:140px;overflow:hidden;text
 
 /* IMPROVEMENT TIPS */
 .tips-list{list-style:none;display:flex;flex-direction:column;gap:8px}
-.tip-item{display:flex;align-items:flex-start;gap:10px;padding:10px 12px;background:var(--bg);border-radius:9px;border-left:3px solid var(--navy);font-size:13px;color:var(--text2)}
+.tip-item{display:flex;align-items:flex-start;gap:10px;padding:10px 12px;background:var(--bg);border-radius:9px;border-left:3px solid var(--green);font-size:13px;color:var(--text2)}
 .tip-icon{font-size:15px;flex-shrink:0;margin-top:1px}
 
 /* NSU GRADING TABLE */
@@ -157,13 +154,13 @@ tbody td{padding:9px 11px;color:var(--text);max-width:140px;overflow:hidden;text
 .gr-points{font-size:11px;color:var(--text3)}
 
 /* FOOTER */
-footer{background:var(--navy);color:rgba(255,255,255,0.4);text-align:center;padding:1.3rem;font-size:12px;border-top:1px solid rgba(255,255,255,0.1)}
-footer strong{color:var(--gold)}
+footer{background:var(--navy);color:rgba(255,255,255,0.35);text-align:center;padding:1.3rem;font-size:12px}
+footer strong{color:#f5c842}
 
 /* MODAL OVERLAY */
-.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,33,71,0.6);z-index:200;align-items:center;justify-content:center;padding:1rem}
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(10,22,40,0.6);z-index:200;align-items:center;justify-content:center;padding:1rem}
 .modal-overlay.open{display:flex}
-.modal{background:var(--white);border-radius:16px;padding:1.8rem;width:100%;max-width:420px;box-shadow:0 20px 60px rgba(0,33,71,0.3);position:relative}
+.modal{background:var(--white);border-radius:16px;padding:1.8rem;width:100%;max-width:460px;box-shadow:0 20px 60px rgba(10,22,40,0.3);position:relative}
 .modal h3{font-family:'Playfair Display',serif;font-size:1.3rem;margin-bottom:1rem;color:var(--text)}
 .modal-close{position:absolute;top:14px;right:14px;background:none;border:none;font-size:18px;cursor:pointer;color:var(--text3)}
 .modal-close:hover{color:var(--text)}
@@ -179,14 +176,14 @@ footer strong{color:var(--gold)}
   <div class="nav-right">
     <button class="nav-btn" onclick="openGradeRef()">📋 Grade Scale</button>
     <button class="nav-btn" onclick="exportData()">⬇ Export</button>
-    <button class="nav-btn" onclick="clearAllData()" style="border-color:rgba(166,43,43,0.3);color:#e07070">🗑 Clear All</button>
+    <button class="nav-btn" onclick="clearAllData()" style="border-color:rgba(184,50,50,0.3);color:#d08080">🗑 Clear All</button>
   </div>
 </nav>
 
 <section class="hero" id="hero">
   <div class="hero-badge">🎓 NSU Academic Performance Tracker</div>
   <h1>Track Your <em>CGPA</em><br>Hit Your Target</h1>
-  <p class="hero-sub">Log every course, every semester. See where you stand and what you need to improve.</p>
+  <p class="hero-sub">Log every course, every semester. Updated precisely to match the standard NSU grading system parameters.</p>
   <button class="hero-cta" onclick="document.getElementById('tracker').scrollIntoView({behavior:'smooth'})">
     📊 Open Tracker
   </button>
@@ -221,7 +218,7 @@ footer strong{color:var(--gold)}
       <div class="card-title">Add Course / Grade</div>
       <div class="form-row">
         <div class="fg"><label>Semester</label>
-          <input type="text" id="c-sem" placeholder="Spring 2025" list="sem-list">
+          <input type="text" id="c-sem" placeholder="Spring 2026" list="sem-list">
           <datalist id="sem-list"></datalist>
         </div>
         <div class="fg"><label>Course Code</label><input type="text" id="c-code" placeholder="CSE 115"></div>
@@ -236,16 +233,18 @@ footer strong{color:var(--gold)}
         </div>
         <div class="fg"><label>Grade</label>
           <select id="c-grade">
-            <option value="A+">A+ (4.0)</option>
-            <option value="A">A (4.0)</option>
-            <option value="A-">A- (3.7)</option>
-            <option value="B+">B+ (3.3)</option>
-            <option value="B">B (3.0)</option>
-            <option value="B-">B- (2.7)</option>
-            <option value="C+">C+ (2.3)</option>
-            <option value="C">C (2.0)</option>
-            <option value="D">D (1.0)</option>
-            <option value="F">F (0.0)</option>
+            <option value="A">A (4.0) [93+]</option>
+            <option value="A-">A- (3.7) [90-92]</option>
+            <option value="B+">B+ (3.3) [87-89]</option>
+            <option value="B">B (3.0) [83-86]</option>
+            <option value="B-">B- (2.7) [80-82]</option>
+            <option value="C+">C+ (2.3) [77-79]</option>
+            <option value="C">C (2.0) [73-76]</option>
+            <option value="C-">C- (1.7) [70-72]</option>
+            <option value="D+">D+ (1.3) [67-69]</option>
+            <option value="D">D (1.0) [60-66]</option>
+            <option value="F">F (0.0) [Below 60]</option>
+            <option value="I">I (Incomplete)</option>
             <option value="W">W (Withdrawn)</option>
           </select>
         </div>
@@ -262,7 +261,7 @@ footer strong{color:var(--gold)}
       </div>
       <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
         <button class="btn-add" onclick="addCourse()">+ Add Course</button>
-        <span id="add-msg" style="font-size:12px;color:var(--navy);font-weight:600;display:none">✓ Saved!</span>
+        <span id="add-msg" style="font-size:12px;color:var(--green);display:none">✓ Saved!</span>
       </div>
     </div>
     <div id="cgpa-semester-breakdown"></div>
@@ -302,33 +301,45 @@ footer strong{color:var(--gold)}
   <div class="modal">
     <button class="modal-close" onclick="document.getElementById('modal').classList.remove('open')">✕</button>
     <h3>NSU Grading Scale</h3>
-    <p style="font-size:12px;color:var(--text3);margin-bottom:1rem">North South University official letter grade to GPA point conversion</p>
+    <p style="font-size:12px;color:var(--text3);margin-bottom:1rem">North South University official letter grade to GPA point conversion scale</p>
     <div class="grade-ref">
-      <div class="gr-item"><div class="gr-letter">A+ / A</div><div class="gr-points">4.0 points</div></div>
-      <div class="gr-item"><div class="gr-letter">A-</div><div class="gr-points">3.7 points</div></div>
-      <div class="gr-item"><div class="gr-letter">B+</div><div class="gr-points">3.3 points</div></div>
-      <div class="gr-item"><div class="gr-letter">B</div><div class="gr-points">3.0 points</div></div>
-      <div class="gr-item"><div class="gr-letter">B-</div><div class="gr-points">2.7 points</div></div>
-      <div class="gr-item"><div class="gr-letter">C+</div><div class="gr-points">2.3 points</div></div>
-      <div class="gr-item"><div class="gr-letter">C</div><div class="gr-points">2.0 points</div></div>
-      <div class="gr-item"><div class="gr-letter">D</div><div class="gr-points">1.0 point</div></div>
-      <div class="gr-item"><div class="gr-letter">F</div><div class="gr-points">0.0 points</div></div>
-      <div class="gr-item"><div class="gr-letter">W</div><div class="gr-points">Withdrawn</div></div>
+      <div class="gr-item"><div class="gr-letter">A</div><div class="gr-points">4.0 (93+)</div></div>
+      <div class="gr-item"><div class="gr-letter">A-</div><div class="gr-points">3.7 (90-92)</div></div>
+      <div class="gr-item"><div class="gr-letter">B+</div><div class="gr-points">3.3 (87-89)</div></div>
+      <div class="gr-item"><div class="gr-letter">B</div><div class="gr-points">3.0 (83-86)</div></div>
+      <div class="gr-item"><div class="gr-letter">B-</div><div class="gr-points">2.7 (80-82)</div></div>
+      <div class="gr-item"><div class="gr-letter">C+</div><div class="gr-points">2.3 (77-79)</div></div>
+      <div class="gr-item"><div class="gr-letter">C</div><div class="gr-points">2.0 (73-76)</div></div>
+      <div class="gr-item"><div class="gr-letter">C-</div><div class="gr-points">1.7 (70-72)</div></div>
+      <div class="gr-item"><div class="gr-letter">D+</div><div class="gr-points">1.3 (67-69)</div></div>
+      <div class="gr-item"><div class="gr-letter">D</div><div class="gr-points">1.0 (60-66)</div></div>
+      <div class="gr-item"><div class="gr-letter">F</div><div class="gr-points">0.0 (&lt;60)</div></div>
+      <div class="gr-item"><div class="gr-letter">I</div><div class="gr-points">Neutral</div></div>
+      <div class="gr-item"><div class="gr-letter">W</div><div class="gr-points">Neutral</div></div>
     </div>
     <div style="margin-top:1rem;padding:10px 12px;background:var(--bg);border-radius:8px;font-size:12px;color:var(--text2)">
-      <strong>GPA Formula:</strong> Σ(Grade Points × Credit Hours) ÷ Σ(Credit Hours)<br>
-      W grades are excluded from GPA calculation.
+      <strong>GPA Calculation Formula:</strong><br>
+      $$\Sigma(\text{Grade Points} \times \text{Credit Hours}) \div \Sigma(\text{Attempted Credits})$$<br>
+      • <strong>F grades</strong> factor into calculations as 0.0 points.<br>
+      • <strong>W (Withdrawn)</strong> and <strong>I (Incomplete)</strong> grades are entirely omitted from calculations.
     </div>
   </div>
 </div>
 
 <footer>
-  <p>NSU Grade Tracker &nbsp;·&nbsp; Built for <strong>North South University</strong> students &nbsp;·&nbsp; Data saved locally in your browser</p>
+  <p>NSU Grade Tracker &nbsp;·&nbsp; Standardized to <strong>North South University Policy Matrix</strong> &nbsp;·&nbsp; Data securely saved locally</p>
 </footer>
 
 <script>
-// ─── NSU GRADE SCALE ───
-const GRADE_POINTS = {'A+':4.0,'A':4.0,'A-':3.7,'B+':3.3,'B':3.0,'B-':2.7,'C+':2.3,'C':2.0,'D':1.0,'F':0.0,'W':null};
+// ─── NSU REVISED GRADE SCALE ───
+const GRADE_POINTS = {
+  'A': 4.0, 'A-': 3.7, 
+  'B+': 3.3, 'B': 3.0, 'B-': 2.7, 
+  'C+': 2.3, 'C': 2.0, 'C-': 1.7, 
+  'D+': 1.3, 'D': 1.0, 
+  'F': 0.0, 
+  'I': null, 'W': null
+};
 
 let DATA = {courses:[]};
 
@@ -342,15 +353,19 @@ function saveData(){
   try{ localStorage.setItem('nsu_tracker_v1', JSON.stringify(DATA)); } catch(e){}
 }
 
-function gradePoints(g){ return GRADE_POINTS[g] ?? null; }
+function gradePoints(g){ return GRADE_POINTS[g] !== undefined ? GRADE_POINTS[g] : null; }
 
 function calcCGPA(courses){
   const valid = courses.filter(c => gradePoints(c.grade) !== null);
   if(!valid.length) return {cgpa:'—', totalCredits:0, earnedCredits:0, totalAttempted:0};
+  
   const totalCredits = valid.reduce((a,c)=>a+c.credit,0);
   const totalPoints = valid.reduce((a,c)=>a+(gradePoints(c.grade)*c.credit),0);
-  const earned = courses.filter(c=>c.grade!=='F'&&c.grade!=='W').reduce((a,c)=>a+c.credit,0);
-  const attempted = courses.filter(c=>c.grade!=='W').reduce((a,c)=>a+c.credit,0);
+  
+  // F counts as attempted but not earned; W/I are excluded from both calculations
+  const earned = courses.filter(c=>c.grade!=='F'&&c.grade!=='W'&&c.grade!=='I').reduce((a,c)=>a+c.credit,0);
+  const attempted = courses.filter(c=>c.grade!=='W'&&c.grade!=='I').reduce((a,c)=>a+c.credit,0);
+  
   return {
     cgpa: totalCredits>0 ? (totalPoints/totalCredits).toFixed(2) : '—',
     totalCredits, earnedCredits: earned, totalAttempted: attempted
@@ -367,14 +382,13 @@ function calcSemGPA(sem){
 }
 
 function cgpaColor(v){
-  if(v>=3.7) return '#002147';
-  if(v>=3.3) return '#004080';
-  if(v>=3.0) return '#0056b3';
-  if(v>=2.5) return '#d4af37';
-  return '#a62b2b';
+  if(v>=3.7) return '#0b6e4f';
+  if(v>=3.3) return '#0d8a62';
+  if(v>=3.0) return '#1a56a8';
+  if(v>=2.5) return '#c8860a';
+  return '#b83232';
 }
 
-// ─── TABS ───
 function switchTab(t){
   document.querySelectorAll('.tab').forEach(el=>el.classList.toggle('active',el.dataset.t===t));
   document.querySelectorAll('.panel').forEach(el=>el.classList.remove('active'));
@@ -385,7 +399,6 @@ function switchTab(t){
   if(t==='analytics') renderAnalytics();
 }
 
-// ─── ADD COURSE ───
 function addCourse(){
   const sem = document.getElementById('c-sem').value.trim();
   const code = document.getElementById('c-code').value.trim();
@@ -421,12 +434,10 @@ function updateSemList(){
   dl.innerHTML = sems.map(s=>`<option value="${s}">`).join('');
 }
 
-// ─── RENDER CGPA ───
 function renderCGPA(){
-  const {cgpa, totalCredits, earnedCredits, totalAttempted} = calcCGPA(DATA.courses);
+  const {cgpa, totalCredits, earnedCredits} = calcCGPA(DATA.courses);
   const sems = getSemesters();
   const cgpaNum = cgpa==='—' ? 0 : parseFloat(cgpa);
-  const color = cgpaNum>0 ? cgpaColor(cgpaNum) : '#888';
   const pct = Math.round(cgpaNum/4*100);
 
   let progressHtml = '';
@@ -472,7 +483,6 @@ function renderCGPA(){
     </div>`;
 }
 
-// ─── RENDER SEMESTER ───
 let activeSem = null;
 function renderSemester(){
   const sems = getSemesters();
@@ -510,7 +520,7 @@ function renderSemContent(){
           <td>${c.name}</td>
           <td>${c.credit}</td>
           <td><span class="grade-badge" style="${gradeBadgeStyle(c.grade)}">${c.grade}</span></td>
-          <td><strong>${gradePoints(c.grade)!==null?gradePoints(c.grade):'N/A'}</strong></td>
+          <td><strong>${gradePoints(c.grade)!=null?gradePoints(c.grade).toFixed(1):'N/A'}</strong></td>
           <td><span style="font-size:11px;color:var(--text3)">${c.type}</span></td>
         </tr>`).join('')}</tbody>
       </table>
@@ -520,24 +530,17 @@ function renderSemContent(){
 
 function gradeBadgeStyle(g){
   const map = {
-    'A+':'background:#eef7f4;color:#1b4d3e',
-    'A':'background:#eef7f4;color:#1b4d3e',
-    'A-':'background:#eef7f4;color:#1b4d3e',
-    'B+':'background:#f0f6ff;color:#0056b3',
-    'B':'background:#f0f6ff;color:#0056b3',
-    'B-':'background:#f0f6ff;color:#0056b3',
-    'C+':'background:#fff9e6;color:#a07800',
-    'C':'background:#fff9e6;color:#a07800',
-    'D':'background:#fdf1f1;color:#a62b2b',
-    'F':'background:#fdf1f1;color:#a62b2b',
-    'W':'background:#eee;color:#666'
+    'A':'background:#d6f5ea;color:#064e37', 'A-':'background:#d6f5ea;color:#064e37',
+    'B+':'background:#ddeeff;color:#0e3d8a', 'B':'background:#ddeeff;color:#0e3d8a', 'B-':'background:#ddeeff;color:#0e3d8a',
+    'C+':'background:#fef3dc;color:#7a4800', 'C':'background:#fef3dc;color:#7a4800', 'C-':'background:#fef3dc;color:#b08020',
+    'D+':'background:#fde8e8;color:#b63b3b', 'D':'background:#fde8e8;color:#8c1f1f',
+    'F':'background:#fde8e8;color:#8c1f1f', 'I':'background:#f0f0f0;color:#555', 'W':'background:#f0f0f0;color:#555'
   };
   return map[g]||'background:#eee;color:#555';
 }
 
-// ─── RENDER ALL COURSES ───
 function renderAllCourses(){
-  const {cgpa, earnedCredits, totalAttempted} = calcCGPA(DATA.courses);
+  const {cgpa, earnedCredits} = calcCGPA(DATA.courses);
   document.getElementById('all-stats').innerHTML = `
     <div class="scard"><div class="scard-label">CGPA</div><div class="scard-val">${cgpa}</div><div class="scard-sub">cumulative</div></div>
     <div class="scard"><div class="scard-label">Total Courses</div><div class="scard-val">${DATA.courses.length}</div><div class="scard-sub">all time</div></div>
@@ -554,15 +557,14 @@ function renderAllCourses(){
     <td>${c.name}</td>
     <td>${c.credit}</td>
     <td><span style="padding:2px 9px;border-radius:20px;font-size:11px;font-weight:600;${gradeBadgeStyle(c.grade)}">${c.grade}</span></td>
-    <td><strong>${gradePoints(c.grade)!==null?gradePoints(c.grade):'—'}</strong></td>
+    <td><strong>${gradePoints(c.grade)!==null?gradePoints(c.grade).toFixed(1):'—'}</strong></td>
     <td style="font-size:11px;color:var(--text3)">${c.type}</td>
     <td><button class="btn-danger" onclick="deleteCourse(${c.id})">✕</button></td>
   </tr>`).join('');
 }
 
-// ─── RENDER ANALYTICS ───
 function renderAnalytics(){
-  const courses = DATA.courses.filter(c=>c.grade!=='W');
+  const courses = DATA.courses.filter(c=>c.grade!=='W'&&c.grade!=='I');
   if(!courses.length){
     document.getElementById('analytics-content').innerHTML='<div class="card"><div class="no-data">No data yet. Add some courses to see analytics.</div></div>';
     return;
@@ -570,56 +572,50 @@ function renderAnalytics(){
   const {cgpa} = calcCGPA(DATA.courses);
   const cgpaNum = parseFloat(cgpa)||0;
 
-  // Grade distribution
   const gradeDist = {};
   courses.forEach(c=>{gradeDist[c.grade]=(gradeDist[c.grade]||0)+1;});
 
-  // Highest/lowest GPA sems
   const sems = getSemesters();
   const semGPAs = sems.map(s=>({sem:s,gpa:parseFloat(calcSemGPA(s).cgpa)||0}));
   const bestSem = semGPAs.length?semGPAs.reduce((a,b)=>b.gpa>a.gpa?b:a,semGPAs[0]):null;
   const worstSem = semGPAs.length?semGPAs.reduce((a,b)=>b.gpa<a.gpa?b:a,semGPAs[0]):null;
 
-  // Courses needing attention (C or below)
-  const weak = DATA.courses.filter(c=>['C+','C','D','F'].includes(c.grade));
-  const strong = DATA.courses.filter(c=>['A+','A','A-'].includes(c.grade));
+  const weak = DATA.courses.filter(c=>['C-','D+','D','F'].includes(c.grade));
+  const strong = DATA.courses.filter(c=>['A','A-'].includes(c.grade));
 
-  // Credits to target CGPA
   const targetGPA = 3.5;
-  const earnedCr = DATA.courses.filter(c=>gradePoints(c.grade)!==null).reduce((a,c)=>a+c.credit,0);
-  const earnedPts = DATA.courses.filter(c=>gradePoints(c.grade)!==null).reduce((a,c)=>a+(gradePoints(c.grade)*c.credit),0);
+  const earnedCr = DATA.courses.filter(c=>gradePoints(c.grade)!=null).reduce((a,c)=>a+c.credit,0);
+  const earnedPts = DATA.courses.filter(c=>gradePoints(c.grade)!=null).reduce((a,c)=>a+(gradePoints(c.grade)*c.credit),0);
   let neededCredits = '—';
   if(cgpaNum < targetGPA && earnedCr>0){
     const needed = Math.ceil((targetGPA*earnedCr - earnedPts)/(4.0-targetGPA));
     neededCredits = needed>0?needed+' cr @4.0':'Already there!';
   } else if(cgpaNum>=targetGPA){neededCredits='Already ≥3.50!';}
 
-  // Grade dist bar
-  const gradeOrder = ['A+','A','A-','B+','B','B-','C+','C','D','F'];
+  const gradeOrder = ['A','A-','B+','B','B-','C+','C','C-','D+','D','F'];
   const gradeDistHtml = gradeOrder.filter(g=>gradeDist[g]).map(g=>{
     const pct = Math.round((gradeDist[g]/courses.length)*100);
     return `<div class="prog-row">
       <div class="prog-label"><span style="padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600;${gradeBadgeStyle(g)}">${g}</span></div>
-      <div class="prog-bar"><div class="prog-fill" style="width:${pct}%;background:${gradePoints(g)>=3.7?'#1b4d3e':gradePoints(g)>=3?'#0056b3':gradePoints(g)>=2?'#d4af37':'#a62b2b'}"></div></div>
+      <div class="prog-bar"><div class="prog-fill" style="width:${pct}%;background:${gradePoints(g)>=3.7?'#0b6e4f':gradePoints(g)>=3?'#1a56a8':gradePoints(g)>=1.7?'#c8860a':'#b83232'}"></div></div>
       <div class="prog-val">${gradeDist[g]}</div>
     </div>`;
   }).join('');
 
-  // Tips
   const tips = [];
-  if(cgpaNum<3.5) tips.push({icon:'📈',text:`Your CGPA is ${cgpa}. To reach 3.50, you need ${neededCredits} of credits with a 4.0.`});
-  if(weak.length>0) tips.push({icon:'⚠️',text:`You have ${weak.length} course(s) with C+ or below: ${weak.slice(0,3).map(c=>c.code).join(', ')}${weak.length>3?'...':''}. Consider retaking these if NSU allows grade replacement.`});
-  if(strong.length>0) tips.push({icon:'⭐',text:`Great job on ${strong.length} A-range course(s)! These are pulling your CGPA up significantly.`});
-  if(bestSem && worstSem && bestSem.sem!==worstSem.sem) tips.push({icon:'📊',text:`Your best semester was ${bestSem.sem} (GPA: ${bestSem.gpa.toFixed(2)}). Your lowest was ${worstSem.sem} (GPA: ${worstSem.gpa.toFixed(2)}).`});
-  if(cgpaNum>=3.7) tips.push({icon:'🏆',text:'Excellent! You are in Dean\'s List territory (≥3.70). Keep it up!'});
-  if(cgpaNum>=3.5&&cgpaNum<3.7) tips.push({icon:'💪',text:'You\'re on track for a good CGPA. Push for A-range grades to break into 3.70+.'});
-  const tipsHtml = tips.length?`<ul class="tips-list">${tips.map(t=>`<li class="tip-item"><span class="tip-icon">${t.icon}</span><span>${t.text}</span></li>`).join('')}</ul>`:'<div style="color:var(--text3);font-size:13px">Add more courses to get personalized tips.</div>';
+  if(cgpaNum<3.5) tips.push({icon:'📈',text:`Your CGPA is ${cgpa}. To reach 3.50, you need approximately ${neededCredits} of credits with an A grade.`});
+  if(weak.length>0) tips.push({icon:'⚠️',text:`You have ${weak.length} course(s) with C- or below: ${weak.slice(0,3).map(c=>c.code).join(', ')}${weak.length>3?'...':''}. Consider retaking these to replace the low scores.`});
+  if(strong.length>0) tips.push({icon:'⭐',text:`Great job on your ${strong.length} A-range course(s)! They are actively bolstering your cumulative balance.`});
+  if(bestSem && worstSem && bestSem.sem!==worstSem.sem) tips.push({icon:'📊',text:`Your highest performance semester was ${bestSem.sem} (GPA: ${bestSem.gpa.toFixed(2)}). Your lowest was ${worstSem.sem} (GPA: ${worstSem.gpa.toFixed(2)}).`});
+  if(cgpaNum>=3.7) tips.push({icon:'🏆',text:'Outstanding performance! You are currently sitting securely in Dean\'s List territory.'});
+  
+  const tipsHtml = tips.length?`<ul class="tips-list">${tips.map(t=>`<li class="tip-item"><span class="tip-icon">${t.icon}</span><span>${t.text}</span></li>`).join('')}</ul>`:'<div style="color:var(--text3);font-size:13px">Add more courses to populate dynamic analytics metrics.</div>';
 
   document.getElementById('analytics-content').innerHTML = `
     <div class="analytics-grid">
       <div class="ana-card"><div class="ana-icon">🎯</div><div class="ana-label">Current CGPA</div><div class="ana-val" style="color:${cgpaColor(cgpaNum)}">${cgpa}</div><div class="ana-sub">out of 4.0</div></div>
-      <div class="ana-card"><div class="ana-icon">⭐</div><div class="ana-label">A-range courses</div><div class="ana-val">${strong.length}</div><div class="ana-sub">A+, A, A- grades</div></div>
-      <div class="ana-card"><div class="ana-icon">📉</div><div class="ana-label">Weak courses</div><div class="ana-val">${weak.length}</div><div class="ana-sub">C+ or below</div></div>
+      <div class="ana-card"><div class="ana-icon">⭐</div><div class="ana-label">A-range courses</div><div class="ana-val">${strong.length}</div><div class="ana-sub">A, A- grades</div></div>
+      <div class="ana-card"><div class="ana-icon">📉</div><div class="ana-label">Low courses</div><div class="ana-val">${weak.length}</div><div class="ana-sub">C- or below</div></div>
       <div class="ana-card"><div class="ana-icon">🏆</div><div class="ana-label">Best semester</div><div class="ana-val">${bestSem?bestSem.gpa.toFixed(2):'—'}</div><div class="ana-sub">${bestSem?bestSem.sem:'no data'}</div></div>
     </div>
     <div class="card">
@@ -632,7 +628,6 @@ function renderAnalytics(){
     </div>`;
 }
 
-// ─── EXPORT ───
 function exportData(){
   const csv = ['Semester,Code,Name,Credits,Grade,Points,Type'];
   DATA.courses.forEach(c=>csv.push(`"${c.semester}","${c.code}","${c.name}",${c.credit},${c.grade},${gradePoints(c.grade)??'N/A'},"${c.type}"`));
